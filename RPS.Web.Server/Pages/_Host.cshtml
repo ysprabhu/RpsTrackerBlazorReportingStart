@@ -16,7 +16,14 @@
     <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
     <link href="css/site.css" rel="stylesheet" />
 
-    <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
+    <!-- If not using Kendo styling you may need following added -->
+    @* <link rel="stylesheet" href="https://unpkg.com/@@progress/kendo-theme-default@latest/dist/all.css" /> *@
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js?version6.0.2" defer></script>
+  <script src="api/reports/resources/js/telerikReportViewer"></script>
+
+
 </head>
 <body>
     <app>
@@ -24,5 +31,6 @@
     </app>
 
     <script src="_framework/blazor.server.js"></script>
+  <script src="_content/telerik.reportviewer.blazor/interop.js" defer></script>
 </body>
 </html>
